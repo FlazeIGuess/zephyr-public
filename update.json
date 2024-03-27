@@ -1,10 +1,10 @@
 {
-  "version": "v1.1.1",
-  "notes": "Update2",
-  "pub_date": "2024-03-26T16:46:57Z",
+  "version": "v1.1.2",
+  "notes": "Test Update",
+  "pub_date": "2024-03-27T16:46:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1d5T3dxRmJDNm5kQ1JuZEhGYzVXbHlWdHJOQURRSy9IRkxmMEtzNk5aWURNamlmdm1xZHUrcUZFSGtibVk2VEhUcmpUUFpCaUExR1lhUXdFdXdTbVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzExNDY4MDAxCWZpbGU6WmVwaHlyXzEuMS4yX3g2NC1zZXR1cC5uc2lzLnppcAoyYlhkbVVRSWJna2IvZHpFamMvNG15QjE2OHZCbktNOUhleWpXTCtBZ29HbFBwV0pQak1PQlU3N2N6MnVBZm5uQVJtRm8xUU9qOHQ5N3kyQ1NtRTBCUT09Cg==",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1VaQ2d5SUpJS3N6Z3FmZUY3d3BxN2JXV3NXSTl1RmVKZXZCT2sraE93MXJVNDJtQTNYZlZqbzh4Z1E2OFBsK2hEMFd0c0NNN0Q0Z3NUeWcvbHcwRUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzExNTYwOTUyCWZpbGU6WmVwaHlyXzEuMS4yX3g2NC1zZXR1cC5uc2lzLnppcAowUWVyckRralA3bnJwNStpYVFTNkRFVmJzbi90VEFrRDJOSCsyTzRhK2JIU1BiUTBKdEJ0NVF5aFBoM0N6akkxMW5pRGlpQUdoVGdzZTVQbUtTRCtDUT09Cg==",
       "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.1.2_x64-setup.nsis.zip"
     }
   }
