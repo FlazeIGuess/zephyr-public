@@ -1,11 +1,11 @@
 {
-  "version": "v1.2.2",
-  "notes": "Zephyr 1.2.2 \nAnschrift Anpassung",
-  "pub_date": "2024-04-19T16:46:57Z",
+  "version": "v1.2.3",
+  "notes": "Zephyr 1.2.3 \nNach erfolgreicher Lizenzangabe, wird man weitergeleitet.",
+  "pub_date": "2024-04-30T16:46:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1JtZVAvbWhVSU9kamhEdVVnV0JYTVVsU3dtY1dqSkpqMmNxNzlrbUhMbkxkN0ViSFNNbm5zRzNtMHA2Ulc3NFNjVlk1cmtodm1xOFFtYWsvc2JNVndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzNDU5NTUyCWZpbGU6WmVwaHlyXzEuMi4yX3g2NC1zZXR1cC5uc2lzLnppcAp3VG5ZT3djSVRxbC96b2FwbHVYWUlYS0djZURTeHRoaVdEcnQ2YWF1eE9DVmFVcm13c29lK0h0L1NBUERVdFBBYlg3c20veTdxL2VjUHVuK0owVzdBdz09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.2.2_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1FwN25ibGo0U2VJbjlDZk5ZUGVPWEtYaHdEeW1FTnJLc2V5cmszR28wY3ZiRnFndUtQL1dud05UNTVtR2NCMm51M1VURlVZc1RXWXBsVyt3NUNaTVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0NTY3MjY0CWZpbGU6WmVwaHlyXzEuMi4zX3g2NC1zZXR1cC5uc2lzLnppcApzL3ZNdjVaVEhvZzhmc1BUaUtpc3I5VlV0bU0vZThHd2pjU0JmYzRtb09XNGZhTkwvOXdmRjZwamlXcTcyc2d3M1NjaUE5OHdUVWovZHZqOXRHdUhEdz09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.2.3_x64-setup.nsis.zip"
     }
   }
 }
