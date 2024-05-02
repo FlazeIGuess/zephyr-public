@@ -1,11 +1,11 @@
 {
-  "version": "v1.2.3",
-  "notes": "Zephyr 1.2.3 \nFix:\n- Nach erfolgreicher Lizenzangabe, wird man weitergeleitet.",
+  "version": "v1.2.4",
+  "notes": "Zephyr 1.2.4 \nNeu:\n- Neu Lade Button in 'Konverter', 'Einstellungen' & 'Lizenz Infos'.\n    Dies ist dafür da, falls Zephyr mal nicht richtig funktioniert, können Sie dort Zepyhr neu laden und somit Fehler beheben. \n- Wenn die Excel-Tabelle Fehler enthält wird jetzt angegeben auf welchem Blatt, welche Spalte und welche Zeile\n Änderungen:\n - Die Dunkel Modus Einstellung wurde vom Menü zu den Erweiterten Einstellungen verschoben. ",
   "pub_date": "2024-04-30T16:46:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1FwN25ibGo0U2VJbjlDZk5ZUGVPWEtYaHdEeW1FTnJLc2V5cmszR28wY3ZiRnFndUtQL1dud05UNTVtR2NCMm51M1VURlVZc1RXWXBsVyt3NUNaTVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0NTY3MjY0CWZpbGU6WmVwaHlyXzEuMi4zX3g2NC1zZXR1cC5uc2lzLnppcApzL3ZNdjVaVEhvZzhmc1BUaUtpc3I5VlV0bU0vZThHd2pjU0JmYzRtb09XNGZhTkwvOXdmRjZwamlXcTcyc2d3M1NjaUE5OHdUVWovZHZqOXRHdUhEdz09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.2.3_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1laRzNsN0hWK0Fla3drczh4Vnppdk5zQkhXNlp3T2ZiVFA5a256NXEyZmUvTGU1Z0ZBb2dDMDVidTBvRmZTMUx5ZmxjcGdmVW1LMzQ5VFJqT3FqYnc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0NjY1OTY0CWZpbGU6WmVwaHlyXzEuMi40X3g2NC1zZXR1cC5uc2lzLnppcAo2MkI5NTdkV2tHVDNSNHRqdG5wZjkxOFZ3elYxenhoRk1IeE5WSU9FSlBETnE1dy9sWDFiMDJ0TjlCcTc3cmNHTFhzZVViM1pYYk5WbXhlekdkeUdBQT09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.2.4_x64-setup.nsis.zip"
     }
   }
 }
