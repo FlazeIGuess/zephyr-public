@@ -1,11 +1,11 @@
 {
-  "version": "v1.2.4",
-  "notes": "Zephyr 1.2.4 \nNeu:\n- Neu Lade Button in 'Konverter', 'Einstellungen' & 'Lizenz Infos'.\n    Dies ist dafür da, falls Zephyr mal nicht richtig funktioniert, können Sie dort Zepyhr neu laden und somit Fehler beheben. \n- Wenn die Excel-Tabelle Fehler enthält wird jetzt angegeben auf welchem Blatt, welche Spalte und welche Zeile\n Änderungen:\n - Die Dunkel Modus Einstellung wurde vom Menü zu den Erweiterten Einstellungen verschoben. ",
+  "version": "v1.3.0",
+  "notes": "Zephyr 1.3.0 \nNeu:\n- E-Mails gelten jetzt als einzelne User, das bedeutet, dass alle User unabhängige Einstellungen hat, da die Einstellungen jetzt pro User gespeichert werden. \nACHTUNG: Sie müssen nach dem Update die Einstellungen nochmal neu eingeben, da alle Daten jetzt überschrieben werden. Änderungen:\n - Man kann jetzt die Mandatennummer/Datum Koordinaten verändern, während die/das Mandantennummer/Datum überschrieben werden. ",
   "pub_date": "2024-04-30T16:46:57Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1laRzNsN0hWK0Fla3drczh4Vnppdk5zQkhXNlp3T2ZiVFA5a256NXEyZmUvTGU1Z0ZBb2dDMDVidTBvRmZTMUx5ZmxjcGdmVW1LMzQ5VFJqT3FqYnc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0NjY1OTY0CWZpbGU6WmVwaHlyXzEuMi40X3g2NC1zZXR1cC5uc2lzLnppcAo2MkI5NTdkV2tHVDNSNHRqdG5wZjkxOFZ3elYxenhoRk1IeE5WSU9FSlBETnE1dy9sWDFiMDJ0TjlCcTc3cmNHTFhzZVViM1pYYk5WbXhlekdkeUdBQT09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.2.4_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1NDYXp1R0RxclYyTEhSYVU4SjNpcXZvVzRkU2h1WkxzM2dxRzRWS2hKZCtubGNmNWNMR0kyZ1lNa2FhNTdqWHNvQndNVTMweFZ5a2RFS1B2RG1lV3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE0NzUyNjA3CWZpbGU6WmVwaHlyXzEuMy4wX3g2NC1zZXR1cC5uc2lzLnppcAphSmNndzBMYkhwbnUrbjNnN3VXRTdwSHlMc3NqUThKMDJrSXVQN0Nqc09qOE9OeFVtWFhPanI3ZkxYUDBlMTZMbTQ5WjVRb3lxWmw2bmIra1BtUXNBUT09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.3.0_x64-setup.nsis.zip"
     }
   }
 }
