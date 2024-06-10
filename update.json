@@ -1,5 +1,5 @@
 {
-  "version": "v1.4.2",
+  "version": "v1.4.1",
   "notes": "Fehlerbehebungen:\n- Ein Fehler wurde behoben, bei dem der Erfassungsbeleg nicht konvertiert wurde, wenn kein Startsheet angegeben war.\n- Die Mandantennummer kann nun wieder aus dem Sheet ausgelesen werden.",
   "pub_date": "2024-06-10T17:24:00Z",
   "platforms": {
