@@ -1,7 +1,7 @@
 {
   "version": "v1.4.2",
   "notes": "Fehlerbehebungen:\n- Ein Fehler wurde behoben, bei dem der Erfassungsbeleg nicht konvertiert wurde, wenn kein Startsheet angegeben war.\n- Die Mandantennummer kann nun wieder aus dem Sheet ausgelesen werden.",
-  "pub_date": "2024-06-10T17:24:00Z",
+  "pub_date": "2024-06-11T17:24:00Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1ZiQnJIMjVzZW5CN3N6bVphOFF2dmx2cmtNaStRNmtZbnBHaHZPTGdiQk1TS3dGZk5jaW9Xa0ZmTk9QVGorRlhDOUJ1OXVsMmNoUmYvajlGNUY2bFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE4MDQyNjQwCWZpbGU6WmVwaHlyXzEuNC4yX3g2NC1zZXR1cC5uc2lzLnppcAovYjFsTW14YmN6R3UybmxyaFQ3TnF3aWpRc0FmbHhsYjBVL1BjU3R4dERSS3BMVUVuU1pQZGRkNm51TU81eUVqM2Q1QStnS2tZZkxzQXp3ZmtnZzVCQT09Cg==",
