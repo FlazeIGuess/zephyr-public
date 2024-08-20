@@ -1,11 +1,11 @@
 {
-  "version": "v1.4.3",
-  "notes": "Fehlerbehebungen:\n- Ein Fehler wurde behoben, der dass auslesen mancher Seiten verhindert hat.",
-  "pub_date": "2024-06-19T17:24:00Z",
+  "version": "v1.4.4",
+  "notes": "Fehlerbehebungen:\n- Ein Fehler wurde behoben, der dass auslesen von dem Kostenträger verhindert hat.",
+  "pub_date": "2024-08-20T20:24:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1MvTVlMQ2xoeVhDeG95M3JUbGVSZXptR3JwY2ZoZmVvVkVZQmFDY1M5eGtHQWRYMUMzZ3piRW55VjlwaHRmcTRqMjFjMGxVQ1BZSWU5V2x1L1JySGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE4ODczNjkxCWZpbGU6WmVwaHlyXzEuNC4zX3g2NC1zZXR1cC5uc2lzLnppcApsYTdJNGRHOGNDR2dBVXAxdWhKa2lIeVdPSDU3cHMrd01zaU5QTXpVK2hmMmFtajVaYmxUSzdKL0h2TXY4K1d5SW5sQXduOG82MzI1VG5oUFRIYlJBZz09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.3_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST1JEL2xXQ0pKb2pPWTMzL0RtY2I5L0dVNzdPK3kzSXllMytuTTN0em5jVGpmUzhJWXdkc0FaSEx1N2docUt2QXc5Ym4wLzY0SHdYK2tmVDJ5VUxXSGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI0MTk1NjM4CWZpbGU6WmVwaHlyXzEuNC40X3g2NC1zZXR1cC5uc2lzLnppcApCNlI2RkEra21vbFM0QVAvYVRJSTU0UDFnYkZpWnlYTUFKSWZqU0hGTkFsbm9tTzg5eHVvbXVnTmpLMEFkTUdnZnNBWk9WaU91Sk5ySWlnYzJjbU9CQT09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.4_x64-setup.nsis.zip"
     }
   }
 }
