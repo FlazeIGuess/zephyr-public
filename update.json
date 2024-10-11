@@ -1,5 +1,5 @@
 {
-  "version": "v1.4.6",
+  "version": "v1.4.5",
   "notes": "Fehlerbehebungen:\n- Kalendarien Daten die ein Punkt hinter der Zahl hatten wurden nicht richtig ausgelesen.\n- Spalten Buchstaben konnten nicht klein sein, wurd jetzt behoben, sodass es egal ist ob sie klein oder groß geschrieben werden.",
   "pub_date": "2024-10-11T10:00:00Z",
   "platforms": {
