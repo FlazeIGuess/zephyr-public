@@ -1,7 +1,7 @@
 {
-  "version": "v1.4.4",
+  "version": "v1.4.6",
   "notes": "Fehlerbehebungen:\n- Kalendarien Daten die ein Punkt hinter der Zahl hatten wurden nicht richtig ausgelesen.\n- Spalten Buchstaben konnten nicht klein sein, wurd jetzt behoben, sodass es egal ist ob sie klein oder groß geschrieben werden.",
-  "pub_date": "2024-08-20T20:24:00Z",
+  "pub_date": "2024-10-11T10:00:00Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST2NMRkE3MWpWVk5QWHZ6TFlUSXluK0ppb3N2Zm1nUVJRazVKN2xicmpBTm1haExpdWR4VW9vNlZQVmtnampvYWdXb1duZXIrdVFNZmYvTlljMUFOY0FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI4NjMzNzY0CWZpbGU6WmVwaHlyXzEuNC41X3g2NC1zZXR1cC5uc2lzLnppcAp1OCtYbUVwY0JRY3NGMmhQektXMzgxNGJFbnJrRUFDMXpxcTc5TnEvMDJuZXBXQW05MHliYzBiU0dUQTZKTWxISXl5M1pWajE3RXU0b3V3WS9tQ0pEZz09Cg==",
