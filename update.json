@@ -1,11 +1,11 @@
 {
-  "version": "v1.4.5",
-  "notes": "Fehlerbehebungen:\n- Kalendarien Daten die ein Punkt hinter der Zahl hatten wurden nicht richtig ausgelesen.\n- Spalten Buchstaben konnten nicht klein sein, wurd jetzt behoben, sodass es egal ist ob sie klein oder groß geschrieben werden.",
-  "pub_date": "2024-10-11T10:00:00Z",
+  "version": "v1.4.6",
+  "notes": "Änderungen:\n- Bei Auslesen wird das Datum vom ersten Blatt genommen, vorher war es das letzte.\nFehlerbehebungen:\n- Das Datum wurd nicht richtig ausgelesen und auch nicht richtig für Kalendarien angewendet. \n- In manchen Fällen wurd die Ausgangsdatei als Leer angegeben, weil das Stopblatt nicht richtig intialisiert wurde, jetzt funktioniert es.",
+  "pub_date": "2024-10-14T15:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST2VZS3YybWhGZU9xWGxYbmRCcWtnSldBeXZ5cUtXWHpXb1dwRkVXMkc2ZEErZW1aVTFEZkNreWp0WFBCZTE1YmNwMnIzaUhjSVgveXd2eWoxV1dZdEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI4NjM3MDMxCWZpbGU6WmVwaHlyXzEuNC41X3g2NC1zZXR1cC5uc2lzLnppcApNQzdxa052aW5oRUlTR1BFVkRPVTFNWE9nYUR0R3BySE1qVDhWdjkzUUFReFY4OUQ2bFFhaWJXWUZZelI5Y05sUzRqUmtxVWx6dENWcWlORjFNd3RBZz09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.5_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST2M0dFU1cTdGSUowV1JFNFhjTmV0Q0RLZ1dQS3owWWIwT051U042bFYvZXZpNVlwc1RqcXlVMmM1RzlsTlJoemxDK1Vzd1hFNm5qMmY1NGwxMUs5NkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI4OTExMzYyCWZpbGU6WmVwaHlyXzEuNC42X3g2NC1zZXR1cC5uc2lzLnppcApmbndGcHhVVFYwZ296MnVNQmc3RzJhOGNoaU9EZ0hhL0pOdUVHTnptSEM3dXNLZGVxaUs4dkFmNXpLOUFpZi8zb3NvQ29rSEU2QkNoc1hJZ3hqaHpBUT09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.6_x64-setup.nsis.zip"
     }
   }
 }
