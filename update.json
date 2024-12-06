@@ -1,11 +1,11 @@
 {
-  "version": "v1.4.6",
-  "notes": "Änderungen:\n- Bei Auslesen wird das Datum vom ersten Blatt genommen, vorher war es das letzte.\nFehlerbehebungen:\n- Das Datum wurd nicht richtig ausgelesen und auch nicht richtig für Kalendarien angewendet. \n- In manchen Fällen wurd die Ausgangsdatei als Leer angegeben, weil das Stopblatt nicht richtig intialisiert wurde, jetzt funktioniert es.",
+  "version": "v1.4.7",
+  "notes": "Neue Funktionen:\n- Das Startblatt gibt jetzt auch an, ab welchem Blatt die Lohnarten ausgelesen werden.\n- Neue Fehlermeldungen, wenn das Datum oder die Mandantennummern leer sind.",
   "pub_date": "2024-10-14T15:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST2M0dFU1cTdGSUowV1JFNFhjTmV0Q0RLZ1dQS3owWWIwT051U042bFYvZXZpNVlwc1RqcXlVMmM1RzlsTlJoemxDK1Vzd1hFNm5qMmY1NGwxMUs5NkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI4OTExMzYyCWZpbGU6WmVwaHlyXzEuNC42X3g2NC1zZXR1cC5uc2lzLnppcApmbndGcHhVVFYwZ296MnVNQmc3RzJhOGNoaU9EZ0hhL0pOdUVHTnptSEM3dXNLZGVxaUs4dkFmNXpLOUFpZi8zb3NvQ29rSEU2QkNoc1hJZ3hqaHpBUT09Cg==",
-      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.6_x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRMUljY2VCWHVST2FZWWNRLzM3V0RhNlRzYTVBa0ZMR0lFTnU0MTAzSEQ2NFFCeG9OWnhTemlPOEx2Zno1TU00SWFWclFpdlBQbmVSZTN3WVhoUGxnYlVTd1BLUEx6SVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzMzNDk3NjQxCWZpbGU6WmVwaHlyXzEuNC43X3g2NC1zZXR1cC5uc2lzLnppcAo0SzdMQmNKa2NzQlViWTVIMGtUMTlVcHFscVRGbW5hUFhjejM0djkyRENsNnBlVWM1NWRGMGQrYUt5MCtRVWJoNStiYmpBRGhhOWk0cVpKbmVNcllCQT09Cg==",
+      "url": "https://github.com/FlazeIGuess/zephyr-public/releases/download/update/Zephyr_1.4.7_x64-setup.nsis.zip"
     }
   }
 }
