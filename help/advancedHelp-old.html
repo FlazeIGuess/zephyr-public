@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="intro.css" rel="stylesheet"/>
+    <link href="light-style.css" rel="stylesheet" id="theme-style">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Zephyr Converter</title>
+</head>
+<body>
+<div id="searchBar">
+    <input type="text" id="searchInput" placeholder="Suchbegriff eingeben" />
+    <button id="searchButton">Suchen</button>
+    <button id="prevMatch">Vorherige</button>
+    <button id="nextMatch">Nächste</button>
+    <span id="matchCounter"></span>
+</div>
+<h1>Zephyr &#8211; Detaillierte Anleitung</h1>
+<div class="info-text"><p>Zephyr ausführlicher erklärt! | DOC Version 1.0 für <=Zepyhr 1.5.0</p></div>
+<ul>
+    <h2>Inhaltsverzeichnis:</h2>
+    <li><a style="font-weight: bold;" href="#einleitung">Einführung</a>
+        <ul>
+            <li><a href="#fehlermeldungen">Mögliche
+                Fehlermeldungen</a>
+                <ul>
+                    <li><a href="#ungueltige-email">Ungültige
+                        E-Mail</a></li>
+                    <li><a href="#abgelaufene-lizenz">Abgelaufene
+                        Lizenz</a></li>
+                    <li><a href="#ungueltige-lizenz">Ungültige
+                        Lizenz</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#konverter">Konverter</a>
+        <ul>
+            <li><a href="#konvertierungsmodus">Konvertierungsmodus</a></li>
+            <li><a href="#datei-auswaehlen">Datei auswählen</a></li>
+            <li><a href="#dateiname">Dateiname</a></li>
+            <li><a href="#temp-dateiname">Temporärer
+                Dateiname</a></li>
+            <li><a href="#standard-dateiname">Standard
+                Dateiname</a></li>
+            <li><a href="#mandantennummer">Mandantennummer
+                &amp; Datum manuell festlegen</a></li>
+            <li><a href="#start-stopblatt">Start-
+                &amp; Stopblatt</a></li>
+            <li><a href="#konvertieren-download">Konvertieren
+                &amp; Download</a></li>
+            <li><a href="#informations-banner">Informations-Banner</a></li>
+        </ul>
+    </li>
+    <li><a href="#einstellungen">Einstellungen</a>
+        <ul>
+            <li><a href="#einstellungsmodus">Einstellungsmodus</a></li>
+            <li><a href="#erfassungsbeleg">Erfassungsbeleg
+                &amp; Kalendarium Einstellungen</a>
+                <ul>
+                    <li><a href="#ausgabe-format">Ausgabe
+                        Format</a></li>
+                    <li><a href="#trenner">Trenner</a></li>
+                    <li><a href="#standard-dateinamen">Standard-Dateinamen</a></li>
+                    <li><a href="#automatischer-download">Automatischer
+                        Download</a></li>
+                    <li><a href="#mandantennummer-excel">Mandantennummer
+                        &amp; Datum aus der Excel auslesen</a></li>
+                    <li><a href="#manuelle-headerzeile">Manuelle
+                        Header Zeile</a></li>
+                    <li><a href="#auto-headerzeilen">Automatische
+                        Headerzeilen Suchfunktion</a></li>
+                    <li><a href="#manuelle-startzeile">Manuelle
+                        Startzeile</a></li>
+                    <li><a href="#auto-startzeilen">Automatische
+                        Startzeilen Suchfunktion</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#erweiterte-einstellungen">Erweiterte
+        Einstellungen</a>
+        <ul>
+            <li><a href="#info-popup">Informations Pop-Up</a>
+                <ul>
+                    <li><a href="#popup-beispiel">Beispiel von
+                        einem Pop-Up</a></li>
+                </ul>
+            </li>
+            <li><a href="#popup-laenge">Informations
+                Pop-Up Länge</a></li>
+            <li><a href="#tooltips">Tooltips</a></li>
+            <li><a href="#einfuehrungs-popup">Einführungs
+                Pop-Up</a></li>
+            <li><a href="#dunkel-modus">Dunkel Modus</a></li>
+        </ul>
+    </li>
+    <li><a href="#lizenz">Lizenz Informationen</a>
+        <ul>
+            <li><a href="#lizenz-gueltig">Lizenz gültig für</a></li>
+            <li><a href="#neue-lizenz">Neue Lizenz
+                einspielen</a></li>
+            <li><a href="#lizenz-bis">Lizenz gültig bis</a></li>
+            <li><a href="#benutzer-emails">Benutzer E-Mails</a></li>
+        </ul>
+    </li>
+    <li><a href="#fehler-beheben">Fehler beheben</a>
+        <ul>
+            <li><a href="#neu-laden">Neu Laden</a></li>
+            <li><a href="#falsches-format">Falsches Format?</a></li>
+            <li><a href="#personalnummer-schreibweise">Alle
+                erlaubten Schreibweisen von &#8222;Personalnummer&#8221;</a></li>
+            <li><a href="#leere-ausgabedatei">Leere
+                Ausgabedatei?</a></li>
+            <li><a href="#weitere-hilfe">Weitere Hilfe?</a></li>
+        </ul>
+    </li>
+    <li><a href="#weitere-hilfe">Weitere hilfreiche
+        Informationen</a>
+        <ul>
+            <li><a href="#schnell-informationen">Schnell
+                Informationen über Elemente bekommen</a></li>
+            <li><a href="#unterstrichene-texte">Unterstrichene
+                Textelemente</a></li>
+        </ul>
+    </li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+</ul>
+<br>
+<!--<span style="font-weight: bold;">Inhalt:</span><br>
+<br>
+<a href="#fehlermeldungen">Mögliche Fehlermeldungen</a><br>
+<a href="#ungueltige-email">Ung�ltige E-Mail</a><br>
+<a href="#abgelaufene-lizenz">Abgelaufene Lizenz</a><br>
+<a href="#ungueltige-lizenz">Ung�ltige Lizenz</a><br>
+<br>
+<a href="#konvertierungsmodus">Konvertierungsmodus</a><br>
+<a href="#datei-auswaehlen">Datei ausw�hlen</a><br>
+<a href="#dateiname">Dateiname</a><br>
+<a href="#temp-dateiname">Tempor�rer Dateiname</a><br>
+<a href="#standard-dateiname">Standard Dateiname</a><br>
+<a href="#mandantennummer">Mandantennummer &amp; Datum
+    manuell festlegen</a><br>
+<a href="#start-stopblatt">Start- &amp; Stopblatt</a><br>
+<a href="#konvertieren-download">Konvertieren &amp;
+    Download</a><br>
+<a href="#informations-banner">Informations-Banner</a><br>
+<br>
+<a href="#einstellungsmodus">Einstellungsmodus</a><br>
+<a href="#erfassungsbeleg">Erfassungsbeleg &amp;
+    Kalendarium Einstellungen</a><br>
+<a href="#ausgabe-format">Ausgabe Format</a><br>
+<a href="#trenner">Trenner</a><br>
+<a href="#standard-dateinamen">Standard-Dateinamen</a><br>
+<a href="#automatischer-download">Automatischer Download</a><br>
+<a href="#mandantennummer-excel">Mandantennummer &amp;
+    Datum aus der Excel auslesen</a><br>
+<a href="#manuelle-headerzeile">Manuelle Header Zeile</a><br>
+<a href="#auto-headerzeilen">Automatische Headerzeilen
+    Suchfunktion</a><br>
+<a href="#manuelle-startzeile">Manuelle Startzeile</a><br>
+<a href="#auto-startzeilen">Automatische Startzeilen
+    Suchfunktion</a><br>
+<br>
+<a href="#info-popup">Informations Pop-Up</a><br>
+<a href="#popup-beispiel">Beispiel von einem Pop-Up</a><br>
+<a href="#popup-laenge">Informations Pop-Up L�nge</a><br>
+<a href="#tooltips">Tooltips</a><br>
+<a href="#einfuehrungs-popup">Einf�hrungs Pop-Up</a><br>
+<a href="#dunkel-modus">Dunkel Modus</a><br>
+<br>
+<a href="#lizenz-gueltig">Lizenz g�ltig f�r</a><br>
+<a href="#neue-lizenz">Neue Lizenz einspielen</a><br>
+<a href="#lizenz-bis">Lizenz g�ltig bis</a><br>
+<a href="#benutzer-emails">Benutzer E-Mails</a><br>
+<br>
+<a href="#neu-laden">Neu Laden</a><br>
+<a href="#falsches-format">Falsches Format?</a><br>
+<a href="#personalnummer-schreibweise">Alle erlaubten
+    Schreibweisen von &#8222;Personalnummer&#8221;</a><br>
+<a href="#leere-ausgabedatei">Leere Ausgabedatei?</a><br>
+<a href="#weitere-hilfe">Weitere Hilfe?</a><br>
+<br>
+<a href="#schnell-informationen">Schnell Informationen
+    �ber Elemente bekommen</a><br>
+<a href="#unterstrichene-texte">Unterstrichene Textelemente</a><br>
+<a href="#disclaimer">Disclaimer</a>
+-->
+<!-- Zielabschnitte -->
+<div id="searchableContent">
+<section id="einleitung">
+    <h2>Einleitung</h2>
+    <p>Nachdem Sie Zephyr erfolgreich installiert haben, können Sie es starten! Es gibt mehrere Wege, Zephyr zu starten, einmal durch ein Icon, welches Sie auf Ihrem Desktop finden. Ein weiterer Weg ist es, Zephyr durch die Suche unten links auf Ihrem Desktop zu starten. Nachdem Sie Zephyr gestartet haben, werden Sie vom Startbildschirm begrüßt. Wenn Sie das Programm das erste Mal gestartet haben, müssen Sie Ihre Lizenzdatei einlesen. Die Lizenzdatei ist in einem ".lic" Format gespeichert! Wenn Sie keine Lizenzdatei haben, richten Sie sich an "EnSerSo"!</p>
+</section>
+
+<section id="fehlermeldungen">
+    <h2>Mögliche Fehlermeldungen</h2>
+    <p>Ungültige E-Mail, abgelaufene Lizenz, ungültige Lizenz.</p>
+</section>
+
+<section id="ungueltige-email">
+    <h2>Ungültige E-Mail</h2>
+    <p>Dieser Fehler kann drei Ursachen haben: 1) Sie haben die E-Mail falsch geschrieben. 2) Die eingegebene E-Mail hat keine Lizenzberechtigung. 3) Bei der Lizenzvergabe ist ein Fehler aufgetreten.</p>
+</section>
+
+<section id="abgelaufene-lizenz">
+    <h2>Abgelaufene Lizenz</h2>
+    <p>Wenn dieser Fehler aufkommt, ist die Lizenz, die Sie einspielen wollten, bereits abgelaufen.</p>
+</section>
+
+<section id="ungueltige-lizenz">
+    <h2>Ungültige Lizenz</h2>
+    <p>Falls dieser Fehler auftritt, senden Sie die ".lic"-Datei und schildern den Fehler an den Support.</p>
+</section>
+
+<section id="konverter">
+    <h2>Konverter</h2>
+    <p>Hier können Sie die Datei konvertieren. Mit "*" markierte Einstellungen sind verpflichtend.</p>
+</section>
+
+<section id="konvertierungsmodus">
+    <h2>Konvertierungsmodus</h2>
+    <p>Hier können Sie auswählen, ob die Datei ein Kalendarium ist. Geben Sie die Spalte für die Daten an.</p>
+</section>
+
+<section id="datei-auswaehlen">
+    <h2>Datei auswählen</h2>
+    <p>Wählen Sie die Excel-Tabelle, die Sie konvertieren möchten.</p>
+</section>
+
+<section id="dateiname">
+    <h2>Dateiname</h2>
+    <p>Setzen Sie entweder einen temporären oder den Standard-Dateinamen.</p>
+</section>
+
+<section id="temp-dateiname">
+    <h2>Temporärer Dateiname</h2>
+    <p>Hier können Sie einen temporären Namen für die Ausgangsdatei angeben.</p>
+</section>
+
+<section id="standard-dateiname">
+    <h2>Standard-Dateiname</h2>
+    <p>Setzen Sie einen Standardnamen, der in den Einstellungen gespeichert wird.</p>
+</section>
+
+<section id="mandantennummer">
+    <h2>Mandantennummer</h2>
+    <p>Setzen Sie die Mandantennummer und das Datum manuell oder entnehmen Sie sie aus der Excel-Datei.</p>
+</section>
+
+<section id="start-stopblatt">
+    <h2>Start- & Stopblatt</h2>
+    <p>Wählen Sie aus, welche Blätter in der Excel-Tabelle konvertiert werden sollen.</p>
+</section>
+
+<section id="konvertieren-download">
+    <h2>Konvertieren & Download</h2>
+    <p>Starten Sie die Konvertierung und laden Sie die Datei herunter. Aktivieren Sie den automatischen Download in den Einstellungen.</p>
+</section>
+
+<section id="informations-banner">
+    <h2>Informations-Banner</h2>
+    <p>Zeigt den aktuellen Status und eventuelle Fehler an.</p>
+</section>
+
+<section id="einstellungen">
+    <h2>Einstellungen</h2>
+    <p>Bearbeiten Sie verschiedene Einstellungen. Mit "*" markierte Einstellungen sind verpflichtend.</p>
+</section>
+
+<section id="einstellungsmodus">
+    <h2>Einstellungsmodus</h2>
+    <p>Wählen Sie aus, welche Einstellungen Sie bearbeiten möchten.</p>
+</section>
+
+<section id="erfassungsbeleg">
+    <h2>Erfassungsbeleg</h2>
+    <p>Bearbeiten Sie Einstellungen für Erfassungsbeleg und Kalendarium.</p>
+</section>
+
+<section id="ausgabe-format">
+    <h2>Ausgabe-Format</h2>
+    <p>Wählen Sie zwischen ".csv" oder ".txt" als Ausgabeformat.</p>
+</section>
+
+<section id="trenner">
+    <h2>Trenner</h2>
+    <p>Wählen Sie das Trennzeichen für die Werte, z.B. "," oder ";".</p>
+</section>
+
+<section id="standard-dateinamen">
+    <h2>Standard-Dateinamen</h2>
+    <p>Setzen Sie den Standardnamen für die Ausgabe.</p>
+</section>
+
+<section id="automatischer-download">
+    <h2>Automatischer Download</h2>
+    <p>Aktivieren Sie den automatischen Download der konvertierten Datei.</p>
+</section>
+
+<section id="mandantennummer-excel">
+    <h2>Mandantennummer aus Excel</h2>
+    <p>Geben Sie die Koordinaten für Mandantennummer und Datum an.</p>
+</section>
+
+<section id="manuelle-headerzeile">
+    <h2>Manuelle Headerzeile</h2>
+    <p>Geben Sie die Zeile an, in der die Lohnarten stehen.</p>
+</section>
+
+<section id="auto-headerzeilen">
+    <h2>Automatische Headerzeilen</h2>
+    <p>Die Funktion basiert auf der Zeile, in der die Beschriftung "Personalnummer" steht.</p>
+</section>
+
+<section id="manuelle-startzeile">
+    <h2>Manuelle Startzeile</h2>
+    <p>Geben Sie die Startzeile für die Konvertierung an.</p>
+</section>
+
+<section id="auto-startzeilen">
+    <h2>Automatische Startzeilen</h2>
+    <p>Die Funktion basiert auf der Zeile mit der Beschriftung "Personalnummer".</p>
+</section>
+
+<section id="erweiterte-einstellungen">
+    <h2>Erweiterte Einstellungen</h2>
+    <p>Bearbeiten Sie zusätzliche Funktionen wie Pop-Ups und Tooltips.</p>
+</section>
+
+<section id="info-popup">
+    <h2>Info-Pop-Up</h2>
+    <p>Schalten Sie das Info-Pop-Up ein oder aus.</p>
+</section>
+
+<section id="popup-beispiel">
+    <h2>Pop-Up-Beispiel</h2>
+    <p>Beispiel für ein Info-Pop-Up.</p>
+</section>
+
+<section id="popup-laenge">
+    <h2>Pop-Up-Länge</h2>
+    <p>Stellen Sie ein, wie lange das Pop-Up angezeigt wird.</p>
+</section>
+
+<section id="tooltips">
+    <h2>Tooltips</h2>
+    <p>Aktivieren oder deaktivieren Sie die Anzeige von Tooltips.</p>
+</section>
+
+<section id="einfuehrungs-popup">
+    <h2>Einführungs-Pop-Up</h2>
+    <p>Schalten Sie das Einführungs-Pop-Up ein oder aus.</p>
+</section>
+
+<section id="dunkel-modus">
+    <h2>Dunkel-Modus</h2>
+    <p>Aktivieren oder deaktivieren Sie den Dunkel-Modus.</p>
+</section>
+
+<section id="lizenz">
+    <h2>Lizenz</h2>
+    <p>Sehen Sie Lizenzdetails und laden Sie eine neue Lizenz ein.</p>
+</section>
+
+<section id="lizenz-gueltig">
+    <h2>Lizenz gültig</h2>
+    <p>Details zur Gültigkeit der Lizenz.</p>
+</section>
+
+<section id="neue-lizenz">
+    <h2>Neue Lizenz</h2>
+    <p>Laden Sie eine neue Lizenz ein, wenn die alte fast abläuft.</p>
+</section>
+
+<section id="lizenz-bis">
+    <h2>Lizenz bis</h2>
+    <p>Sehen Sie das Ablaufdatum Ihrer Lizenz.</p>
+</section>
+
+<section id="benutzer-emails">
+    <h2>Benutzer-E-Mails</h2>
+    <p>Sehen Sie alle Benutzer, die Zugriff auf die Lizenz haben.</p>
+</section>
+
+<section id="fehler-beheben">
+    <h2>Fehler beheben</h2>
+    <p>Tipps zur Behebung von häufigen Fehlern.</p>
+</section>
+
+<section id="neu-laden">
+    <h2>Neu laden</h2>
+    <p>Laden Sie die Seite neu, falls sie nicht mehr bedienbar ist.</p>
+</section>
+
+<section id="falsches-format">
+    <h2>Falsches Format</h2>
+    <p>Stellen Sie sicher, dass die Datei das richtige Format hat.</p>
+</section>
+
+<section id="personalnummer-schreibweise">
+    <h2>Personalnummer Schreibweise</h2>
+    <p>Liste erlaubter Schreibweisen für "Personalnummer".</p>
+</section>
+
+<section id="leere-ausgabedatei">
+    <h2>Leere Ausgabedatei</h2>
+    <p>Deaktivieren Sie die automatische Headerzeilen-Suchfunktion und geben Sie die Headerzeile manuell an.</p>
+</section>
+
+<section id="weitere-hilfe">
+    <h2>Weitere Hilfe</h2>
+    <p>Erstellen Sie ein Ticket, wenn weiterhin Probleme auftreten.</p>
+</section>
+
+<section id="schnell-informationen">
+    <h2>Schnell-Informationen</h2>
+    <p>Erfahren Sie schnell mehr, indem Sie die Maus über ein Element halten.</p>
+</section>
+
+<section id="unterstrichene-texte">
+    <h2>Unterstrichene Texte</h2>
+    <p>Unterstrichene Texte sind klickbar und leiten weiter.</p>
+</section>
+
+<section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <p>Das Programm befindet sich in der Entwicklungsphase und Fehler können auftreten.</p>
+</section>
+</div>
+</body>
+
+<script type="module" src="../assets/js/search.js"></script>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="intro.css" rel="stylesheet" />
+    <link href="light-style.css" rel="stylesheet" id="theme-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zephyr &#8211; Detaillierte Anleitung</title>
+    <style>
+        /* Basis-Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            margin-left: 280px;
+            box-sizing: border-box;
+            margin-top: 0;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .sidebar ul {
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+        }
+        .sidebar a:hover {
+            color: #007bff;
+        }
+        .sidebar ul ul {
+            margin-left: 20px; /* 2. Ebene einrücken*/
+        }
+        .sidebar ul ul ul {
+            margin-left: 5px; /* 3. Ebene einrücken*/
+        }
+
+        /* Suchleisten-Styles */
+        #searchBar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+        }
+        #searchBar input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #searchBar button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #searchBar button:hover {
+            background-color: #0056b3;
+        }
+        #matchCounter {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h2>Inhaltsverzeichnis</h2>
+    <ul>
+        <li><a href="#einfuhrung">Einführung</a></li>
+        <li><a href="#fehlermeldungen">Mögliche Fehlermeldungen</a></li>
+        <li><a href="#konverter">Konverter</a></li>
+        <ul>
+            <li><a href="#erfassungsbeleg">Erfassungsbeleg oder Kalendarium</a></li>
+            <li><a href="#datei-auswaehlen">Datei auswählen</a></li>
+            <li><a href="#speichern-unter">Speichern unter</a></li>
+            <li><a href="#konvertieren">Konvertieren</a></li>
+            <li><a href="#datumsspalte-festlegen">Datumsspalte festlegen</a></li>
+            <li><a href="#mandanten-nr-manuell">Mandanten Nr. manuell</a></li>
+            <li><a href="#datum-manuell">Datum manuell</a></li>
+            <li><a href="#startblatt">Startblatt</a></li>
+            <li><a href="#stopblatt">Stopblatt</a></li>
+            <li><a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#temp-dateiname">Temporärer Dateiname</a></li>
+            <li><a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#standardnamen">Standardnamen</a></li>
+            <ul>
+                <li><a href="#einstellungen">Einstellungen</a></li>
+                <ul>
+                    <li><a href="#basis-einstellungen">Basis Einstellungen</a></li>
+                    <ul>
+                        <ul>
+                            <ul>
+                                <li><a href="#standardordner">Standardordner</a></li>
+                                <li><a href="#standarddateiname">Standarddateiname</a></li>
+                                <li><a href="#eingangs-ausgangsordner">Eingangs- = Ausgangsordner</a></li>
+                                <li><a href="#personalnummer-definition">Personalnummer Definition</a></li>
+                                <li><a href="#ausgabe-format">Ausgabe Format</a></li>
+                                <li><a href="#trenner">Trenner</a></li>
+                                <li><a href="#informations-popup">Informations Pop-Up</a></li>
+                                <li><a href="#informations-popup-dauer">Informations Pop-Up Dauer</a></li>
+                                <li><a href="#tooltips">Tooltips</a></li>
+                                <li><a href="#quick-start-popup">QUICK START Pop-Up</a></li>
+                                <li><a href="#dunkelmodus">Dunkelmodus</a></li>
+                                <ul>
+                                    <ul>
+                                        <ul>
+                                            <li><a href="#erfassungsbeleg-einstellungen">Erfassungsbeleg Einstellungen</a></li>
+                                            <ul>
+                                                <li><a href="#standardordner">Standardordner</a></li>
+                                                <li><a href="#standarddateiname">Standarddateiname</a></li>
+                                                <li><a href="#personalnummer-definition">Personalnummer Definition</a></li>
+                                                <li><a href="#automatischer-download">Automatischer Download</a></li>
+                                                <li><a href="#koordinaten-mandanten-nr">Koordinaten Mandanten Nr.</a></li>
+                                                <li><a href="#koordinaten-datum">Koordinaten Datum</a></li>
+                                                <li><a href="#startzeile">Startzeile</a></li>
+                                                <li><a href="#startzeilen-automatik">Startzeilen Automatik</a></li>
+                                                <li><a href="#einstiegszeile">Einstiegszeile</a></li>
+                                                <li><a href="#einstiegszeile-automatik">Einstiegszeile Automatik</a></li>
+                                                <ul>
+                                                    <ul>
+                                                        <ul>
+                                                            <li><a href="#kalendarium-einstellungen">Kalendarium Einstellungen</a></li>
+                                                            <ul>
+                                                                <li><a href="#standardordner">Standardordner</a></li>
+                                                                <li><a href="#standarddateiname">Standarddateiname</a></li>
+                                                                <li><a href="#personalnummer-definition">Personalnummer Definition</a></li>
+                                                                <li><a href="#automatischer-download">Automatischer Download</a></li>
+                                                                <li><a href="#koordinaten-mandanten-nr">Koordinaten Mandanten Nr.</a></li>
+                                                                <li><a href="#koordinaten-datum">Koordinaten Datum</a></li>
+                                                                <li><a href="#datumsspalte-festlegen">Datumsspalte festlegen</a></li>
+                                                                <li><a href="#startzeile">Startzeile</a></li>
+                                                                <li><a href="#startzeilen-automatik">Startzeilen Automatik</a></li>
+                                                                <li><a href="#einstiegszeile">Einstiegszeile</a></li>
+                                                                <li><a href="#einstiegszeile-automatik">Einstiegszeile Automatik</a></li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li><a href="#hilfe">Hilfe</a></li>
+                                                                        <ul>
+                                                                            <li><a href="#erweiterte-hilfe">Erweiterte Hilfe</a></li>
+                                                                            <li><a href="#vorlage-excel">Vorlage Excel-Tabellen</a></li>
+                                                                            <li><a href="#ticket">Ticket eröffnen</a></li>
+                                                                            <ul>
+                                                                                <li><a href="#kontakt">Kontakt</a></li>
+                                                                                <li><a href="#lizenz">Lizenz Info</a></li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                        </ul>
+                                                    </ul>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<div class="content">
+    <!-- Suchleiste integriert – Text und Funktionalität unverändert -->
+    <div id="searchBar">
+        <input type="text" id="searchInput" placeholder="Suchbegriff eingeben" />
+        <button id="searchButton">Suchen</button>
+        <button id="prevMatch">Vorherige</button>
+        <button id="nextMatch">Nächste</button>
+        <span id="matchCounter"></span>
+    </div>
+    <script type="module" src="../assets/js/search.js"></script>
+
+    <!-- Der restliche Inhalt der Hilfe bleibt unverändert -->
+    <h2>Inhalt</h2>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="einfuhrung">Einführung</a><br>
+    <br>
+    <p class="MsoNormal" style="line-height: normal;"><span style="font-size: 12pt; font-family: &quot;Verdana&quot;,sans-serif;">Herzlich willkommen im Handbuch für Zephyr! Hier findest du eine detaillierte Anleitung zu den verschiedenen Funktionen dieses praktischen Lohnkonverters. Zephyr erleichtert dir die Übertragung von Excel-Daten direkt in die Addison Finanzbuchhaltung. Schritt für Schritt zeigen wir dir, wie du das Beste aus diesem Tool herausholst, um deine Prozesse effizienter und fehlerfreier zu gestalten. Ob du neu mit Zephyr arbeitest oder dich nach fortgeschrittenen Funktionen erkundigen möchtest &#8211; du bist hier genau richtig!<o:p></o:p></span></p>
+    <p class="MsoNormal" style="line-height: normal;"><span style="font-size: 12pt; font-family: &quot;Verdana&quot;,sans-serif;">Wenn du lieber schnell durchstarten willst, lies dir den <b>QUICK START</b> durch.<o:p></o:p></span></p>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="fehlermeldungen">Mögliche Fehlermeldungen</a><br>
+    <p class="MsoNormal" style="line-height: normal;"><b><span style="font-size: 12pt; font-family: &quot;Verdana&quot;,sans-serif; color: red;">Details zu Fehlermeldungen Liste von Victor<o:p></o:p></span></b></p>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="konverter">Konverter</a><br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="erfassungsbeleg">&nbsp;&nbsp;&nbsp; Erfassungsbeleg oder Kalendarium</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier wählst du aus ob du einen Erfassungsbeleg oder ein Kalendarium konvertieren möchtest. Je nachdem was du wählst, wird dir die Auswahl grün angezeigt.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="datei-auswaehlen">&nbsp;&nbsp;&nbsp; Datei auswählen</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Wähle in dem Bereich die Excel Vorlage aus. Achte bitte darauf, das die Vorlage keinen Filter enthält und du alle Einstellungen in den Basis Einstellungen, bzw. den Erfassungsbeleg - / &nbsp;&nbsp;&nbsp; Kalendariums Einstellungen korrekt hinterlegt hast.<br>
+    &nbsp;&nbsp;&nbsp; Wie und welche Einstellungen du vornehmen kannst und solltest wird dir dort angezeigt, bzw. kannst du auch in dieser Hilfe nachlesen. <br>
+    &nbsp;&nbsp;&nbsp; Beim nächsten Aufruf, wird der letzte ausgewählte Pfad, zu deiner Vorlage, wieder aufgerufen.<br>
+    &nbsp;&nbsp;&nbsp; Wenn du das Fenster in Zephyr wechselst, bleibt die ausgewählte Vorlage im Konverterbereich.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="speichern-unter">&nbsp;&nbsp;&nbsp; Speichern unter</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Bestimme hier, wo die Konvertierte Datei gespeichert werden soll. Du kannst in&nbsp;den Basis Einstellungen auch einen fest definierten Ordner wählen. &nbsp;&nbsp; <br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="konvertieren">&nbsp;&nbsp;&nbsp; Konvertieren</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Diese Funktion führst du aus, sobald du die konvertierte Datei erstellen möchtest. <br>
+    &nbsp;&nbsp;&nbsp; Wenn es nicht funktioniert, bzw. ein Fehler ausgegeben wird, schreib uns gerne an. Was wir brauchen findest du <a id="ticket">hier</a>.<br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="temp-dateiname">&nbsp;&nbsp;</a><br>
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#datumsspalte-festlegen" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Datumsspalte festlegen</a> <span style="font-weight: bold;">(Kalendarium)</span><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Wenn du Kalendarium ausgewählt hast, hinterlegst du hier die Spalte, in der in deiner&nbsp;Kalendariumsdatei&nbsp;die Tage für den Monat aufgeführt sind. <a style="color: black; text-decoration: none; font-weight: bold;" id="mandanten-nr-manuell">&nbsp;&nbsp;&nbsp;</a><br>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="mandanten-nr-manuell">&nbsp;&nbsp;&nbsp; Mandanten Nr. manuell</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Wenn du Vorlagen verwenden möchtest, die einen anderen Kopf nutzen als deine Standardvorlage, kannst du hier die Koordinaten für die Mandanten Nummer hinterlegen. Die Werte die&nbsp;&nbsp;&nbsp; du vielleicht in den Basis Einstellungen hinterlegt hast, würden dann nicht genommen werden.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="datum-manuell">&nbsp;&nbsp;&nbsp; Datum manuell</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Wenn deine Vorlage das Datum an einer anderen Stelle aufweist, als in den Basis Einstellungen hinterlegt, kannst du hier die Koordinaten für das Datum eintragen.&nbsp; Die Werte die&nbsp;du &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vielleicht in den Basis Einstellungen hinterlegt hast, würden dann nicht genommen werden.<br>
+    &nbsp;&nbsp;&nbsp; Achte bitte darauf wie das Datum formatiert ist, weitere Hilfe dazu findest du <a id="koordinaten-datum">hier</a>.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="startblatt">&nbsp;&nbsp;&nbsp; Startblatt</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier kannst du das Startblatt individuell auswählen. Standard ist immer das erste. <br>
+    &nbsp;&nbsp;&nbsp; Wenn du allerdings eine Datei hast, die erst ab einem bestimmten Blatt/Sheet eingelesen werden soll, kannst du die hier die Position eintragen ab der ausgelesen werden soll.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="stopblatt">&nbsp;&nbsp;&nbsp; Stopblatt</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Genauso wie du Startblatt auswählen kannst, kannst du hier die Position vom Blatt/Sheet eintragen, bis zu der die Datei ausgelesen werden soll.<br>
+    &nbsp;&nbsp;&nbsp; Wenn du nur einen Bereich aus deiner Datei auslesen möchtest oder mehrere einzelne Abschnitte, kannst du hier mit Startblatt/Stopblatt die Einstellungen vornehmen.<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <span style="font-style: italic;">!Hinweis:</span> &nbsp;Zephyr überprüft jedes einzelne Blatt/Sheet wie der "Header" aufgebaut ist. Wenn&nbsp;die Reihenfolge der Lohnarten oder unterschiedliche Lohnarten, pro Blatt/Sheet <br>
+    &nbsp;&nbsp;&nbsp; anders sind/ist, liest Zephyr die korrekt aus. Da immer der Aufbau pro Blatt/Sheet definiert und ausgegeben wird. <br>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#standardnamen">&nbsp;&nbsp;&nbsp; Standardnamen</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier kannst du entscheiden ob du immer den Standardnamen aus
+    den Basis Einstellungen nutzen möchtest oder einen eigenen definierten.<br>
+    &nbsp;&nbsp;&nbsp; Wenn du noch keinen Standardnamen hinterlegt hast, sagt Zepyhr dir das.<br>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#temp-dateiname">&nbsp;&nbsp;&nbsp; Temporärer Dateiname</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier trägst du den Dateinamen ein, den deine konvertierte Datei haben soll.<br>
+    <br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="einstellungen">Einstellungen</a><br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="basis-einstellungen">&nbsp;&nbsp;&nbsp; Basis Einstellungen</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Die Basis Einstellungen sind dafür gedacht, dir Vorlagen, die immer den gleichen Aufbau haben zu Standardisieren. <br>
+    &nbsp;&nbsp; &nbsp;Erfassungsbeleg/Kalendarium Vorlagen die immer den gleichen Aufbau haben, kannst du&nbsp;hier die Einstellungen hinterlegen und die Konvertierung wird dadurch schneller durchgeführt.<br>
+    &nbsp;&nbsp;&nbsp; Ausnahmen werden manuell im Konverter eingetragen, da werden die Standardwerte nicht beachtet.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="standardordner">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Standardordner</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Diese Funktion wird gewählt um die Konvertierte Datei immer in den selben Ordner zu hinterlegen. Von dort aus kannst du die Datei weiterverarbeiten.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="standarddateiname">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Standarddateiname</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Trage hier den Namen ein den&nbsp;deine konvertierte Datei haben soll, diese wird dann immer genommen. Du kannst im Konverter auch eine individuelle Bezeichnung hinterlegen.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="eingangs-ausgangsordner">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Eingangs- = Ausgangsordner</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">In Entwicklung</span><br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="personalnummer-definition">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Personalnummer Definition</a><br>
+    <br>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Folgende Personalschreibweisen kennt Zephyr, die&nbsp;Groß- und Kleinschreibung ist in diesem Fall egal. <br>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Wenn deine weise nicht dabei ist, kannst du sie hier hinterlegen. Wenn du mehrere Schreibweisen hast, die hier nicht hinterlegt sind, sende uns diese mit einem kleinen Hinweis zu und<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; im nächsten Update sind die dann hinterlegt.<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pers. nr."
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; "pers. nr.:"
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; "personal nummer"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; "personal nummer:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personal-nummer"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personal-nummer:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; "personal nr."
+    <br>
+    &nbsp; &nbsp;&nbsp; "personal nr.:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personalnummer"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personalnummer:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personal-nr.:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personal-nr"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "pers.nr."
+    "pers.nr.:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "personal nr"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; "pers nummer"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; "pers nummer:"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "pers-nr."
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;"pers-nr"
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    "pers-nr.:" <br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#automatischer-download" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Automatischer Download</a><br>
+    &nbsp;&nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp; Diese Einstellung wählst du wenn deine konvertierte Datei automatisch in deinen gewählten Order gespeichert werden soll. Wenn du diese Option nicht wählst zeigt dir Zephyr, oben<br>
+    &nbsp;&nbsp;&nbsp; rechts, deine konvertierte Datei zum Download an.<br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#koordinaten-mandanten-nr" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Koordinaten Mandanten Nr.</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Für deinen Erfassungsbeleg kannst du hier die Koordinaten der Mandanten Nummer hinterlegen. Wenn du viele gleich aufgebaute Vorlagen nutzt, hast du so eine voreingestellte<br>
+    &nbsp;&nbsp;&nbsp; Konfiguration<br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#koordinaten-datum" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Koordinaten Datum</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier hinterlegst du wie bei der Mananten Nummer, die Koordinaten vom Datum. Achte bitte darauf, das die Formatierung korrekt ist. Also als Datumsfeld und nicht so:<br>
+    &nbsp;&nbsp;&nbsp; - 02/2025<br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#startzeile" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Startzeile</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier kannst du fest bestimmen in welcher Zeile sich die verschiedenen Lohnarten (LA) befinden. Zephyr nimmt dann diese Zeile als "Header" und liest dann die Werte ab da aus und <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;konvertiert diese dann. Wenn du eine Vorlage hast, die eine andere Startzeile enthält, bekommst du einen Fehler angezeigt und kannst hier dann die Werte anpassen.<br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#startzeilen-automatik" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Startzeilen Automatik</a><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;<br>
+    &nbsp;&nbsp;&nbsp; Wenn du verschiedene Vorlagen hast, die keine Startzeile an der selben Position haben. Kannst du hier eine automatik einstellen. Zephyr sucht dann nach Personalnummer und &nbsp;<br>
+    &nbsp;&nbsp;&nbsp; Lohnarten. Findet Zephyr &nbsp;diese Kombination startet ab dieser Zeile die Konvertierung. <br>
+    &nbsp;&nbsp;&nbsp; Achte bitte darauf das die Vorlagen eine bekannte Personalnummer Schreibweise haben, eine Übersicht findest du <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#personalnummer-definition">hier</a>.<br>
+    &nbsp;&nbsp;&nbsp; <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#einstiegszeile" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Einstiegszeile</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Wenn Zephyr nicht direkt ab der Startzeile konvertieren soll, z.B. weil die Zeilen darunter Werte enthalten die du nicht in deiner Importdatei haben möchtest, kannst du hier die Zeile<br>
+    &nbsp;&nbsp;&nbsp; hinterlegen ab der die Werte übernommen werden sollen.<br>
+    <br style="font-weight: bold;">
+    <a href="Zephyr%96Detaillierte_%20Anleitung_Sidebar_final.html#einstiegszeile-automatik" style="color: black; text-decoration: none; font-weight: bold;">&nbsp;&nbsp;&nbsp; Einstiegszeile Automatik</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: red;">Nach welchen Kriterien läuft die Automatik , Victor fragen</span><br>
+    <br>
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="hilfe">Hilfe</a><br>
+    <span style="font-size: 12pt; line-height: 107%; font-family: &quot;Verdana&quot;,sans-serif;"></span><span style="font-family: &quot;Verdana&quot;,sans-serif;"><o:p></o:p></span><a style="color: black; text-decoration: none; font-weight: bold;" id="erweiterte-hilfe">&nbsp;&nbsp;&nbsp; Erweiterte Hilfe</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier rufen Sie direkt die Hilfe auf, ohne über ein zielgerichtetes Fragezeichen.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="vorlage-excel">&nbsp;&nbsp;&nbsp; Vorlage Excel-Tabellen</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Vorlage Excel-Tabellen, hier können Sie jeweils eine oder mehrere Vorlagen für Erfassungsbelege/Kalendarium downloaden<span style="color: red; font-weight: bold;">. Victor fragen ob Plural möglich ist.</span><br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="ticket">&nbsp;&nbsp;&nbsp; Ticket eröffnen</a><br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Hier kannst du ein Ticket eröffnen und uns dein Problem schildern. <br>
+    &nbsp;&nbsp;&nbsp; Damit wir dir schnell helfen können:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; - sende uns bitte die anonymisierte Version der Datei<br>
+    &nbsp;&nbsp;&nbsp; - Screenshots der Einstellungen die du gesetzt hast<br>
+    &nbsp;&nbsp;&nbsp; - welche Version du einsetzt<br>
+    &nbsp;&nbsp;&nbsp; - eine kurze Beschreibung des Problems<br>
+    &nbsp;&nbsp;&nbsp; - sehr gerne lesen wir Ticket mit Anrede und Gruß, dankeschön.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="kontakt">Kontakt</a><br>
+    <br>
+    Du brauchst direkt, sofort persönliche Hilfe? Ruf uns an oder schreibe eine direkte Email. Wir probieren sofort mit dir in Kontakt zu treten um dir zu helfen.<br>
+    <br style="font-weight: bold;">
+    <a style="color: black; text-decoration: none; font-weight: bold;" id="lizenz">Lizenz Info</a><br>
+    <br>
+    Unter diesem Punkt findest du die Versions Nummer von Zephyr, für wen und wie lange die Lizenz gültig ist und welche User für Zephyr lizensiert sind.<br>
+    Dazu hast du hier die Möglichkeit den Change Log aufzurufen. Der Change Log zeigt dir alle Neuerungen oder Fehlerbehebungen in den jeweiligen Versionen an.<br>
+    Innerhalb der Lizenz Info findest du auch:<br>
+    <br>
+    - Haftungsausschluss<br>
+    - Lizenzhinweis<br>
+    - Datenschutz Information<br>
+    - AGB<br>
+    <br>
+</div>
+
+</body>
+<script type="module" src="../assets/js/search.js"></script>
+</html>

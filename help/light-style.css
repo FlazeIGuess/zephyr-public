@@ -1,0 +1,138 @@
+/* Allgemeine Stile */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+h1 {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.info-text {
+  background: #e8491d;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  background: #fff;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 4px;
+  transition: background 0.3s;
+}
+ul li:hover {
+  background: #f0f0f0;
+}
+ul li a {
+  text-decoration: none;
+  color: #35424a;
+  display: block;
+}
+ul li a[style*="font-weight: bold;"] {
+  font-weight: bold;
+}
+ul li ul {
+  margin: 8px 0 0 20px;
+  border-left: 2px solid #e8491d;
+  padding-left: 10px;
+}
+section {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+span {
+  font-size: 1.1em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+  nav a {
+    margin: 0 5px;
+    font-size: 0.9em;
+  }
+}
+/* Fixe Suchleiste oben in der Mitte */
+#searchBar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #35424a;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 4px;
+}
+#searchBar input[type="text"] {
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  flex: 1;
+}
+#searchBar button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  background: #e8491d;
+  color: #fff;
+  cursor: pointer;
+}
+#searchBar button:hover {
+  background: #cf3e18;
+}
+#matchCounter {
+  font-weight: bold;
+}
+/* Container für den durchsuchbaren Inhalt – Abstand, damit die fixe Leiste nicht verdeckt */
+#searchableContent {
+  margin: 80px 20px 20px;
+  font-size: 1.2em;
+}
+/* Hervorhebung der Suchtreffer */
+.highlight {
+  background-color: yellow;
+}
+/* Aktueller Treffer */
+.current {
+  background-color: orange;
+}
